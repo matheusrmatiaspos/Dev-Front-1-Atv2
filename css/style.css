@@ -1,0 +1,27 @@
+*{
+    font-family: sans-serif;
+    margin: auto;
+    padding: auto;
+
+}
+
+body{
+    padding: 32px;
+}
+p{
+    margin: 2px 0px;
+}
+.container{
+    margin: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border: solid 1px;
+}
+.info {
+    display: inline-block;
+}
+
+.strong{
+    font-weight: bold;
+}

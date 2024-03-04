@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Compras</title>
+</head>
+<body>
+    <h1>Meus Pedidos</h1>
+    <ul>
+        <li>
+            <a href="#meus-dados">Meus Dados</a>
+        </li>
+        <li>
+            <a href="#minhas-compras">Minhas Compras</a>
+        </li>
+        <li>
+            <a href="#avaliacao-do-produto">Avaliar Produtos</a>
+        </li>
+    </ul>
+    <h2 id="meus-dados">Meus Dados</h2>
+    <section>
+        <form action="" title="Meus Dados" >
+            <fieldset>
+                <legend>Dados da Conta</legend>
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="ex: seuemail@gmail.com">
+                </p>
+                <p>
+                    <input type="checkbox" name="promocao" id="promocao">
+                    <label for="promocao">Quero receber emails promocionais</label>
+                    
+                </p>
+                <p>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" name="senha" id="senha" placeholder="use uma sneha forte">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Email</label><br>
+                    <input type="nome" name="nome" id="nome" placeholder="ex: João da SIlva">
+                </p>
+                <p>
+                    <label for="apelido">como gostaria que a gente te chamasse (opcional)</label><br>
+                    <input type="text" name="apelido" id="apelido" placeholder="Joãozin">
+                </p>
+            </fieldset>
+            <input type="submit" value="Salvar Alterações">
+        </form>
+    </section>
+    <section>
+        <h2 id="minhas-compras">Minhas Compras</h2>
+        <div class="container">
+            <div class="info">
+                <p>
+                    Número do pedido
+                </p>
+                <p>
+                    #37945982
+                </p>
+            </div>
+            <div class="info">
+                <p>
+                    Status
+                </p>
+                <p>Concluído</p>
+            </div>
+            <div class="info">
+                <p>
+                    Data
+                </p>
+                <p>12/02/2020</p>
+            </div>
+            <div class="info">
+                <p>
+                    Forma de pagamento
+                </p>
+                <p>Cartão de Crédito</p>
+            </div>
+            <div class="info">
+                <dialog id="dialog">
+                    <h2>Rastreio Detalhado</h2>
+                    <p>Seu pedido foi entregue com sucesso</p>
+                    <p>Entregue por: GFL</p>
+                    <p>Código de rastreio: 123456789</p>
+                    <p>Entregue em: 12/12/2020</p>
+                    <button onclick="document.querySelector('#dialog').close()">Fechar</button>
+                </dialog>
+                <p>Acompanhamento</p>
+                <button onclick="document.querySelector('#dialog').showModal()">Rastreio Detalhado</button>
+            </div>
+        </div>
+        <div class="container">
+            <img src="" alt="">
+            <div class="info">
+                <p class="strong">
+                    Suporte Articulado para Monitor e Notebook de 13 a 32 Vinik, Articulação Dupla - SMN500
+                </p>
+                <p>
+                    Quantidade: 1
+                </p>
+                <p>
+                    <a href="#">
+                        Avaliar Produto
+                    </a>
+                </p>
+            </div>
+            <div class="info">
+                <p>R$</p>
+                <p>99,90</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <details>
+            <summary>Detalhes do pagamento e envio</summary>
+            <div class="container">
+                <div class="info">
+                    <p class="strong">
+                        Endereço de entrega
+                    </p>
+                    <p>Avenida Estelita Falcão</p>
+                    <p>Número 12, Centro</p>
+                    <p>CEP 48170-970 - Água Fria/BA</p>
+                </div>
+                <div class="info">
+                    <p class="strong">
+                        Forma de Pagamento
+                    </p>
+                    <p>Cartão de Crédito</p>
+                    <p>Master Card **** **** **** 1234</p>
+                    <p>Titular: João da Silva</p>
+                </div>
+                <div class="info">
+                    <p class="strong">
+                        Frete
+                    </p>
+                    <p>R$ 15,52</p>
+                    <p>Enviado por <span class="strong">GFL</span></p>
+                    <p>Entregue</p>
+                </div>
+            </div>
+        </details>
+    </section>
+    <hr>
+    <section>
+        <h2 id="avaliacao-do-produto">Avaliação do produto</h2>
+        <form action="">
+            <fieldset>
+                <legend>Opinião sobre o produto</legend>
+                <p class="strong">Qual cor do produto mais te agrada</p>
+                <input type="color" value="#000000" list="color" />
+                <datalist id="color">
+                    <option>#ff0000</option>
+                    <option>#0000ff</option>
+                    <option>#00ff00</option>
+                    <option>#ffff00</option>
+                    <option>#00ffff</option>
+                </datalist>
+                <p class="strong">O produto é de qualidade?</p>
+                <div>
+                    <input type="radio" name="quality" id="quality1">
+                    <label for="quality1">Concordo Totalmente</label>
+
+                </div>
+                <div>
+                    <input type="radio" name="quality" id="quality2">
+                    <label for="quality2">Concordo</label>
+
+                </div>
+                <div>
+                    <input type="radio" name="quality" id="quality3">
+                    <label for="quality3">Não estou decidido</label>
+
+                </div>
+                <div>
+                    <input type="radio" name="quality" id="quality4">
+                    <label for="quality4">Discordo</label>
+
+                </div>
+                <div>
+                    <input type="radio" name="quality" id="quality5">
+                    <label for="quality5">Discordo Totalmente</label>
+
+                </div>
+                <p class="strong">
+                    Para você, quais parâmetros são mais importantes na qualidade de produto?
+                </p>
+                <input type="checkbox" name="durability" id="durability">
+                <label for="durability">Durabilidade</label>
+                <br>
+                <input type="checkbox" name="features" id="features">
+                <label for="features">Características acessórias ou Features</label>
+                <br>
+                <input type="checkbox" name="reliability" id="reliability">
+                <label for="reliability">Confiabilidade</label>
+                <br>
+                <input type="checkbox" name="appearance" id="appearance">
+                <label for="appearance">Aparência</label>
+                <p class="strong">Descreva a característica que mais chamou atenção no produto</p>
+                <input type="text" name="" id="">
+            </fieldset>
+            <fieldset>
+                <legend>Condições Atuais</legend>
+                <p class="strong">Adicione uma foto atual do produto</p>
+                <input type="file" id="file" name="file">
+                <p class="strong">Data de Compra</p>
+                <input type="date" name="date" id="date">
+                <p class="strong">Deixe um comentário sobre as condiçÕes do produto</p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+    </section>
+    <input type="submit" value="Enviar Avaliação">
+</body>
+</html>
